@@ -1,0 +1,13 @@
+﻿@model IEnumerable<AllplantsSelector.Models.Dish>
+
+    @{
+    ViewData["Title"]= "Dish of the day";
+    }
+    <h1>Dishes</h1>
+    
+    @foreach (var item in Model)
+    {
+    <div>@item.Name, @item.Comment, @item.Calories</div>
+    }
+
+
